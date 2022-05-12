@@ -10,3 +10,8 @@ rte = float(input("Enter rate per hour? "))
 
 p = computepay(hrs, rte)
 print("Pay", p)
+
+
+
+
+
