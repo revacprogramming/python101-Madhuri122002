@@ -5,4 +5,4 @@ r=float(rate)
 if h<=40:
     print(h*r)
 if h>40:
-    print((h*r)*1.5)
+    print((40*r)+((h-40)*r*1.5))
