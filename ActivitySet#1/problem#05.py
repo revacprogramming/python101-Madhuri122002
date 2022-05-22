@@ -1,14 +1,13 @@
-score = input("Enter Score: ")
-s=float(score)
-if s>=0.9:
-    print("A")
-elif s>=0.8:
-    print("B")
-elif s>=0.7:
-    print("C")
-elif s>=0.6:
-    print("D")
-elif s<0.6:
-    print("F")
-else:
-    print("error")
+
+
+hrs=float(input("enter the hours:"))
+rate=float(input("enter the rate:"))
+
+def computepay(h,r):
+  if h<=40:
+      return (h*r)
+  if h>40:
+      return ((40*r)+((h-40)*1.5*r))
+
+pay=computepay(hrs,rate)
+print("Pay",pay)
