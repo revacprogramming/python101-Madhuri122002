@@ -1,14 +1,15 @@
 # This first line is provided for you
-def input(hrs,rate):
-  hrs = input("Enter Hours:")
-  rate=input("enter rate ")
+def inp():
+  hrs = float(input("Enter Hours:"))
+  rate=float(input("enter rate "))
   return hrs, rate
 
-def compute(hrs,rate):
-  pay=hrs*rate
-  return pay
+def compute(val):
+  return val[0]*val[1]
 
-hrs=None
-rate=None
-input(hrs,rate)
-pay=compute(hrs,rate)
+def output(pay):
+  print(pay)
+  
+val=inp()
+pay=compute(val)
+output(pay)

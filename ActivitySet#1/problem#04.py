@@ -1,12 +1,17 @@
+def inp():
+  hrs = float(input("Enter Hours:"))
+  rate=float(input("enter rate:"))
+  return hrs,rate
+  
+def compute(val):
+  if val[0]<=40:
+    return(val[0]*val[1])
+  if val[0]>40:
+    return((40*val[1])+((val[0]-40)*val[1]*1.5))
 
-def compute(h,r):
-  if h<=40:
-    return(h*r)
-    if h>40:
-    return((40*r)+((h-40)*r*1.5))
-
-hrs = input("Enter Hours:")
-h = float(hrs)
-rate=input("enter rate:")
-r=float(rate)
-pay=compute(h,r)
+def output(pay):
+  print(pay)
+  
+val=inp()
+pay=compute(val)
+output(pay)

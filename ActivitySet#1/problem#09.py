@@ -1,12 +1,11 @@
-fname = input("Enter file name: ")
-fh = open(fname)
-lst = list()
-for line in fh:
-    lst1=line.split()
-    for word in lst1:
-        if word in lst:
-            continue
-        else:
-            lst.append(word)
+fname=input("enter the file name:")
+fn=open(fname)
+lst=list()
+for line in fn:
+    words=line.split()
+    for word in words:
+        if word not in lst:
+            lst.append()
             
-print(lst.sort())
+lst.sort()
+print(lst)

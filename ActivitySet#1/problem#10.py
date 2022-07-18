@@ -1,17 +1,12 @@
-largest = None
-smallest = None
-while True:
-    num = input("Enter a number: ")
-    if num == "done":
-        break
-    try:
-        num=int(num)
-        if largest is None or largest<num:
-            largest=num
-        if smallest is None or smallest>num:
-            smallest=num
-    except:
-        print("Invalid input")
+fname=input("enter a file name: ")
+fn=open(fname)
+emails=list()
+counts=dict()
+email=""
+for line in fn:
+  if line.startswith("From"):
+    line=line.split()
+    email=line[1]
+    counts[email]=counts.get(email,0)+1
 
-print("Maximum is", largest)
-print("Minimum is", smallest)
+for 
