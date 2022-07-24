@@ -1,3 +1,4 @@
+#program 6
 class Menu:
   cost=0
   name=""

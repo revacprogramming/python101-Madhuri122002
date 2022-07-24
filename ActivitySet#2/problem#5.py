@@ -1,4 +1,4 @@
-
+#program 5
 
 def get_cs():
   inp=input('enter a string:')
